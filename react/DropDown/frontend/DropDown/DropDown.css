@@ -3,9 +3,11 @@
   flex-direction: column;
   
   width: 250px;
+  
+  margin: auto;
 }
 
-.DropDown__input {   
+.DropDown__input {
    width: 100%;
    height: 40px;
    box-sizing: border-box;

@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import InputValue from './InputValue.js'
+import ListContainer from './ListContainer.js'
 import List from './List.js'
+import Arrow from './Arrow.js'
 import './DropDown.css'
 
 class DropDown extends React.Component {
@@ -33,27 +35,23 @@ class DropDown extends React.Component {
       this.expandCollapse();
    }   
    
-   render() {      
+   render() {
+      let 
+         {isExpanded, selectedId} = this.state,
+         {items, label, placeHolder} = this.props;
+      
       return (
          <div className="DropDown">
             <span className="DropDown__input">
-               <span className="DropDown__input-label">{this.props.label}</span>               
-               <span className="DropDown__input-value">
-                  <InputValue {...this.props} {...this.state} />
-               </span>
-               <span className={'DropDown__input-arrowContainer ' + (this.state.isExpanded ? 'expanded' : '')} onClick={this.expandCollapse}>
-                  <svg
-                     className="DropDown__input-arrow"
-                     width="10"
-                     height="5"
-                     viewBox="0 0 10 5"
-                     fillRule="evenodd"> 
-                        <title>Открыть меню</title>
-                        <path d="M10 0L5 5 0 0z"></path>
-                  </svg>
-               </span>
+               <span className="DropDown__input-label">{label}</span>               
+               <span tabIndex="0" className="DropDown__input-value">
+                  <InputValue selectedId={selectedId} placeHolder={placeHolder} items={items}/>
+               </span>                
+               <Arrow isExpanded={isExpanded} onClick={this.expandCollapse}/>           
             </span>
-            <List isExpanded={this.state.isExpanded} items={this.props.items} onClick={this.handlerListItemClick}/>
+            <ListContainer isExpanded={isExpanded}>
+               <List items={items} onClick={this.handlerListItemClick}/>
+            </ListContainer>
          </div>
       )
    }

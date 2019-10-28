@@ -16,6 +16,6 @@ const storeFactory = (initialState = {count: 10}) =>
    applyMiddleware(logger)(createStore)(
       combineReducers({count}),
       initialState
-   ) 
+   )
 
 export default storeFactory

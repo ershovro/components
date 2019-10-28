@@ -1,11 +1,25 @@
 import Countdown from './Countdown'
 import {tick, reset} from './actions'
 import React from 'react'
+import {connect} from 'react-redux'
 
-const CountdownContainer = ({store}) => {
-   let {count} = store.getState();
+const mapStateToProps = state => ({
+   count: state.count
+})
+
+const mapDispatchToProps = dispatch => ({
+   tick() { 
+      dispatch( tick() ) 
+   },
    
-   return <Countdown count={count} tick={() => store.dispatch( tick() ) } reset={ (value) => store.dispatch( reset(value) ) }/>
-}
+   reset(value) {
+      dispatch( reset(value) ) 
+   }
+})
+
+const CountdownContainer = connect(
+   mapStateToProps,
+   mapDispatchToProps
+)(Countdown)
 
 export default CountdownContainer

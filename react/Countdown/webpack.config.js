@@ -2,7 +2,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = {
    mode: NODE_ENV,
-   context: __dirname + '/frontend/Redux',
+   context: __dirname + '/frontend/Flux',
    entry: './App.js',
    output: {
       path: __dirname + '/public',

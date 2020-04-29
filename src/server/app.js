@@ -15,9 +15,11 @@ const buildHTMLPage = () =>
         <head>
             <meta charset="utf-8"/>
             <title>Application todo-list</title>
+            <link rel="stylesheet" href="./bundle.css">
         </head>
         <body>
             <div id="root"></div>
+            
             <script src="/bundle.js"></script>
         </body>
       </html>

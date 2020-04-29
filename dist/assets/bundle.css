@@ -1,0 +1,13 @@
+.listView {
+  position: relative; }
+
+.listView_item {
+  position: absolute;
+  box-shadow: 2px 2px 9px 0px #bbb;
+  padding: 70px 10px;
+  border-radius: 10px;
+  width: 1050px;
+  margin: 0px 70px 20px 70px; }
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlLmNzcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3JlYWN0L0luZmluaXRlU2Nyb2xsL3N0eWxlc2hlZXRzLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLmxpc3RWaWV3IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlOyB9XG5cbi5saXN0Vmlld19pdGVtIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3gtc2hhZG93OiAycHggMnB4IDlweCAwcHggI2JiYjtcbiAgcGFkZGluZzogNzBweCAxMHB4O1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICB3aWR0aDogMTA1MHB4O1xuICBtYXJnaW46IDBweCA3MHB4IDIwcHggNzBweDsgfVxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7Iiwic291cmNlUm9vdCI6IiJ9*/

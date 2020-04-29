@@ -1,0 +1,13 @@
+.listView {
+  position: relative;
+}
+
+.listView_item {
+  position: absolute;
+
+  box-shadow: 2px 2px 9px 0px #bbb;
+  padding: 70px 10px;
+  border-radius: 10px;
+  width: 1050px;
+  margin: 0px 70px 20px 70px;
+}
